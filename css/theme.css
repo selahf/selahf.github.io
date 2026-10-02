@@ -1,6 +1,21 @@
-/* ========================================
-   DESIGN SYSTEM
-   ======================================== */
+/*
+    DESIGN SYSTEM
+
+    Purpose: Define the global visual language of the portfolio.
+
+    This file contains:
+    - Color variables
+    - Typography
+    - Spacing scale
+    - Layout variables
+    - Border radius variables
+    - Glassmorphism settings
+    - Shadows
+    - Transitions
+
+    Individual components should use these variables rather than
+    defining their own design values whenever possible.
+*/
 
    :root {
 
