@@ -40,15 +40,205 @@
     <link rel = "stylesheet" href = "css/components.css">
     <link rel = "stylesheet" href = "css/pages.css">
 
+    <!-- browser tab icon -->
+    <link rel="icon" type="image/png" href="assets/icons/logo_small.png">
+
 </head>
 
-<body>
-    <!-- page content will be built here -->
-    <script src = "js/main.js"></script>
+<body
+    class="body"
+>
+    <!-- header: personal monogram logo -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"
+            aria-label="Selah Frederickson - Home">
+            <img
+                src="assets/icons/ssf_logo.png"
+                alt="SSF botanical monogram"
+            >
+        </a>
+    </header>
 
-    <!-- temporary -->
-    <h1>Selah Frederickson</h1>
-    <p>Portfolio under development.</p>
+    <!-- navigation: stays available as panel opens and closes -->
+    <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+    >
+        <span class="nav-toggle-icon" aria-hidden="true">‹</span> <!-- chevron -->
+    </button>
+
+    <!-- a subtle backdrop separates open panel from the page -->
+    <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+    <!-- expandable navigation panel -->
+    <aside
+        class="nav-panel"
+        id="site-navigation"
+        aria-label="Site navigation"
+        aria-hidden="true"
+        inert
+    >
+        <div class="nav-panel-header">
+            <span class="nav-logo">
+                <img
+                    src="assets/icons/ssf_logo_nobkg.png"
+                    alt="SSF botanical monogram"
+                >
+            </span>
+        </div>
+
+        <nav class="nav-panel-links" aria-label="Portfolio pages">
+            <a class="nav-card" href="index.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Home</span>
+                    <span class="nav-card-description">
+                        Return to the beginning.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="about.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">About</span>
+                    <span class="nav-card-description">
+                        Background, interests, and goals.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="projects.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Projects</span>
+                    <span class="nav-card-description">
+                        Selected interdisciplinary work.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="experience.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Experience</span>
+                    <span class="nav-card-description">
+                        Research and professional roles.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="contact.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Contact</span>
+                    <span class="nav-card-description">
+                        Get in touch with me.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- main introduction: first thing visitors see -->
+    <main>
+
+        <div class="botanical-background" aria-hidden="true">
+            <img
+                class="botanical-engraving-1"
+                src="assets/images/background/engraving_1.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-2"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-4"
+                src="assets/images/background/engraving_4.png"
+                alt=""
+            >
+        </div>
+        
+        <section class="hero">
+            
+            <div class="hero-content">
+                <p class="eyebrow">
+                    RESEARCH AT THE INTERSECTION OF TECHNOLOGY AND SOCIETY
+                </p>
+
+                <h1>
+                    Computer science, social systems,
+                    <span>and the questions between them.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm Selah Frederickson, an interdisciplinary student and researcher
+                    interested in using computational methods to better understand how people 
+                    interact with data, technology, and intelligent systems, especially in 
+                    educational and social contexts. Drawing on both computer science and 
+                    sociology, I approach research questions from both computational and 
+                    social perspectives. 
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary"
+                        href="projects.html">
+                        Research & Projects
+                    </a>
+
+                    <a class="button button-secondary"
+                        href="about.html">
+                        About Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-portrait">
+                <img
+                    src="assets/images/profile/portrait_collage.png"
+                    alt="Portrait of Selah Frederickson"
+                >
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- footer: a small consistent sign-off -->
+    <footer class="site-footer">
+        <div class="footer-colophon">
+
+            <div class="footer-signature">
+                <img
+                    class="footer-monogram"
+                    src="assets/icons/logo_small.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+                <p class="footer-credit">
+                    Created by Selah Frederickson
+                </p>
+
+                <span class="footer-year">2026</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>

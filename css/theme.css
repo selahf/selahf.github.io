@@ -25,11 +25,14 @@
 
     --color-primary: #E8BEB7;
     --color-secondary: #AFC5B4;
+    --color-secondary-dark: #526E55;
 
     --color-background: #FAF9F6;
     --color-text: #26332C;
 
     --color-divider: #D1D5DB;
+
+    --color-white: #FFFFFF;
 
     /* ----------------------------------------
         TYPOGRAPHY
@@ -69,6 +72,7 @@
 
     --page-padding: 24px;
     --content-max-width: 1200px;
+    --footer-width: 1400px;
 
     /* ----------------------------------------
         BORDER RADIUS
@@ -83,7 +87,11 @@
        ---------------------------------------- */
 
     --glass-background: rgba(255, 255, 255, 0.65);
+    --pink-glass-background: rgba(247, 226, 222, 0.5);
+    --dark-pink-glass-background: rgba(232, 190, 183, 0.48);
+
     --glass-border: rgba(255, 255, 255, 1);
+    --pink-glass-border: rgba(183, 126, 121, 0.5);
     --glass-blur: 12px;
 
     /* ----------------------------------------
