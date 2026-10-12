@@ -1,0 +1,42 @@
+/* 
+    PERSONAL MONOGRAM
+
+    Purpose:
+    Give the page a clickable logo to take users back to the home page.
+*/
+
+/* center page content but limit width */
+.site-header {
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding-block: var(--space-3);
+}
+
+/* personal monogram logo */
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.site-logo img {
+    display: block;
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+}
+
+.site-logo:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 4px;
+}

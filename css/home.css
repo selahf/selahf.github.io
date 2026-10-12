@@ -1,0 +1,246 @@
+/* 
+    HOME PAGE
+
+    Purpose:
+    Introduce me to the user.
+*/
+
+.body {
+    overflow-x: hidden;
+}
+
+/* reusable botanical background layer */
+.botanical-background {
+    position: absolute;
+    inset: 0 auto auto 50%;
+    transform: translateX(-50%);
+
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    height: 100%;
+
+    z-index: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.botanical-background img {
+    position: absolute;
+    height: auto;
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-1 {
+    position: absolute;
+    z-index: -1;
+    top: 128px;
+    left: -176px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-2 {
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    right: -160px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-4 {
+    position: absolute;
+    z-index: -1;
+    bottom: -24px;
+    right: 440px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    isolation: auto;
+}
+
+
+/* center page content but limit width */
+.site-header,
+.hero {
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    margin-inline: auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding-block: var(--space-3);
+}
+
+/* main two-column introduction */
+.hero {
+    position: relative;
+    isolation: isolate;
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    min-height: 70vh;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    align-items: center;
+    gap: clamp(40px, 6vw, 88px);
+
+    margin-inline: auto;
+    padding-block: clamp(48px, 8vh, 96px);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 660px;
+    min-width: 0;
+}
+
+.eyebrow {
+    margin-bottom: 24px;
+    color: var(--color-secondary-dark);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.hero h1 {
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--color-secondary-dark);
+}
+
+.hero-description {
+    max-width: 520px;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+/* portrait */
+.hero-portrait {
+    max-width: 640px;
+    justify-self: center;
+}
+
+.hero-portrait {
+    width: 125%;
+    max-width: 400px;
+    justify-self: center;
+}
+
+.hero-portrait img {
+    justify-self: center;
+    display: block;
+    width: 125%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius-small);
+}
+
+/* tablet and phone layouts */
+@media (max-width: 768px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .site-logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .main-nav {
+        gap: 16px;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
+        min-height: auto;
+        padding-block: 48px;
+    }
+
+    .hero-portrait {
+        width: 100%;
+        max-width: 400px;
+        justify-self: center;
+    }
+
+    .botanical-engraving-1 {
+        top: 64px;
+        left: -24px;
+    }
+
+    .botanical-engraving-2 {
+        top: -104px;
+        right: -64px;
+    }
+
+    .botanical-engraving-4 {
+        bottom: 160px;
+        right: 104px;
+    }
+
+    .focus-areas {
+        margin-top: 32px;
+        line-height: 1.8;
+    }
+
+    .site-footer {
+        margin-top: 32px;
+    }
+
+    .footer-colophon {
+        min-height: 155px;
+        padding: 32px 18px;
+    }
+
+    .footer-monogram {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-credit {
+        font-size: 0.85rem;
+    }}

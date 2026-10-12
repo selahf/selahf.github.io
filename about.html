@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang = "en">
+
 <!--
     ABOUT PAGE
 
@@ -11,3 +14,356 @@
     - Skills / tools overview
     - Optional personal details
 -->
+
+<head>
+
+    <meta charset = "UTF-8">
+
+    <meta
+        name = "viewport"
+        content = "width=device-width, initial-scale=1.0"
+    >
+
+    <title>About | Selah Frederickson</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- portfolio styles -->
+    <link rel = "stylesheet" href = "css/theme.css">
+    <link rel = "stylesheet" href = "css/components.css">
+    <link rel = "stylesheet" href = "css/header.css">
+    <link rel = "stylesheet" href = "css/nav_panel.css">
+    <link rel = "stylesheet" href = "css/about.css">
+    <link rel = "stylesheet" href = "css/footer.css">
+
+    <!-- browser tab icon -->
+    <link rel="icon" type="image/png" href="assets/icons/logo_small.png">
+
+</head>
+
+<body
+    class="body"
+>
+    <!-- header: personal monogram logo -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"
+            aria-label="Selah Frederickson - Home">
+            <img
+                src="assets/icons/ssf_logo.png"
+                alt="SSF botanical monogram"
+            >
+        </a>
+    </header>
+
+    <!-- navigation: stays available as panel opens and closes -->
+    <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+    >
+        <span class="nav-toggle-icon" aria-hidden="true">‹</span> <!-- chevron -->
+    </button>
+
+    <!-- a subtle backdrop separates open panel from the page -->
+    <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+    <!-- expandable navigation panel -->
+    <aside
+        class="nav-panel"
+        id="site-navigation"
+        aria-label="Site navigation"
+        aria-hidden="true"
+        inert
+    >
+        <div class="nav-panel-header">
+            <span class="nav-logo">
+                <img
+                    src="assets/icons/ssf_logo_nobkg.png"
+                    alt="SSF botanical monogram"
+                >
+            </span>
+        </div>
+
+        <nav class="nav-panel-links" aria-label="Portfolio pages">
+            <a class="nav-card" href="index.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Home</span>
+                    <span class="nav-card-description">
+                        Return to the beginning.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="about.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">About</span>
+                    <span class="nav-card-description">
+                        Background, interests, and goals.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="projects.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Projects</span>
+                    <span class="nav-card-description">
+                        Selected interdisciplinary work.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="experience.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Experience</span>
+                    <span class="nav-card-description">
+                        Research and professional roles.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="contact.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Contact</span>
+                    <span class="nav-card-description">
+                        Get in touch with me.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- main section for about page -->
+    <main>
+
+        <div class="botanical-background" aria-hidden="true">
+            <img
+                class="botanical-engraving-1"
+                src="assets/images/background/engraving_1.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-2"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+
+            <img
+                class="botanical-engraving-3"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-4"
+                src="assets/images/background/engraving_4.png"
+                alt=""
+            >
+
+            <img
+                class="botanical-engraving-5"
+                src="assets/images/background/engraving_5.png"
+                alt=""
+            >
+        </div>
+
+        <!-- page introduction -->
+        <section class="about-intro">
+
+            <div class="about-intro-content">
+                <p class="eyebrow">A LITTLE ABOUT ME AND MY RESEARCH</p>
+    
+                <h1>
+                    An academic weapon, <br>
+                    an aspiring researcher,
+                    <span>and a creator of beautiful things.</span>
+                </h1>
+    
+                <p class="about-lead">
+                    I'm Selah Frederickson, an interdisciplinary student
+                    at the University of Montana majoring in Computer 
+                    Science and Sociology with minors in Mathematics
+                    and English. I am interested in researching and
+                    learning more about how computational
+                    methods can help us understand the systems people
+                    create, the technologies they use, and the societies
+                    they shape.
+                </p>
+            </div>
+    
+            <figure class="about-portrait">
+                <img
+                    src="assets/images/profile/about_portrait.jpg"
+                    alt="Selah Frederickson in an academic setting"
+                >
+                <figcaption>
+                    Understanding the world one step at a time.
+                </figcaption>
+            </figure>
+        </section>
+    
+    
+        <!-- academic background -->
+        <section class="about-section">
+            <div class="section-heading">
+                <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
+                <h2>Four Interconnected Areas of Study</h2>
+            </div>
+    
+            <div class="study-grid">
+    
+                <article class="study-card">
+                    <span class="study-number">01</span>
+                    <h3>Computer Science</h3>
+                    <p>
+                        I study computational methods, algorithms,
+                        and software development. I'm especially
+                        interested in using technical tools to
+                        investigate complex problems and make
+                        information more accessible.
+                    </p>
+                </article>
+    
+                <article class="study-card">
+                    <span class="study-number">02</span>
+                    <h3>Sociology</h3>
+                    <p>
+                        Sociology helps me ask how people, institutions,
+                        and social structures shape one another. It
+                        encourages me to consider the human context
+                        behind the data and systems I study.
+                    </p>
+                </article>
+    
+                <article class="study-card">
+                    <span class="study-number">03</span>
+                    <h3>Mathematics</h3>
+                    <p>
+                        Mathematics strengthens my quantitative
+                        reasoning and provides vital background
+                        information for the algorithmic and
+                        data-driven solutions that my research
+                        focuses on.
+                    </p>
+                </article>
+
+                <article class="study-card">
+                    <span class="study-number">04</span>
+                    <h3>English</h3>
+                    <p>
+                        My studies in English inform how I read,
+                        write, and communicate complex ideas. I
+                        complete my research with the public in mind:
+                        all people should be able to interact with
+                        and benefit from my findings.
+                    </p>
+                </article>
+    
+            </div>
+        </section>
+    
+        
+        <!-- research interests section -->
+        <section class="about-section about-interests">
+            <div class="interests-intro">
+                <p class="eyebrow">QUESTIONS I AM WORKING TO UNDERSTAND</p>
+                <h2>Topics of Research</h2>
+                <p class="about-lead">
+                    I'm interested in how technology shapes the ways
+                    people understand information, interact with systems,
+                    and learn about the world around them.
+                </p>
+            </div>
+
+            <div class="interest-grid">
+                <article class="interest-card">
+                    <span class="interest-number">01</span>
+                    <h3>Data Visualization</h3>
+                    <p>
+                        How can visual representations make complex
+                        information more intuitive, meaningful, and
+                        accessible?
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <span class="interest-number">02</span>
+                    <h3>Human-Computer Interaction</h3>
+                    <p>
+                        How do people experience technology, and how
+                        can systems better reflect their needs and
+                        ways of thinking?
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <span class="interest-number">03</span>
+                    <h3>Educational Technology</h3>
+                    <p>
+                        How can computational tools create more
+                        engaging learning experiences and support
+                        different learners?
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <span class="interest-number">04</span>
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        How can intelligent systems model human
+                        experiences and meaningfully support
+                        people's decisions?
+                    </p>
+                </article>
+            </div>
+        </section>
+    
+    </main>
+        
+
+    <!-- footer: a small consistent sign-off -->
+    <footer class="site-footer">
+        <div class="footer-colophon">
+
+            <div class="footer-signature">
+                <img
+                    class="footer-monogram"
+                    src="assets/icons/logo_small.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+                <p class="footer-credit">
+                    Created by Selah Frederickson
+                </p>
+
+                <span class="footer-year">2026</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
