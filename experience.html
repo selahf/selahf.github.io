@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang = "en">
 <!--
     EXPERIENCE PAGE
 
@@ -13,3 +15,488 @@
         - Grizzly Marching Band
         - Awards, nominations, honors, etc.
 -->
+
+<head>
+
+    <meta charset = "UTF-8">
+
+    <meta
+        name = "viewport"
+        content = "width=device-width, initial-scale=1.0"
+    >
+
+    <title>Selah Frederickson</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- portfolio styles -->
+    <link rel = "stylesheet" href = "css/theme.css">
+    <link rel = "stylesheet" href = "css/components.css">
+    <link rel = "stylesheet" href = "css/header.css">
+    <link rel = "stylesheet" href = "css/nav_panel.css">
+    <link rel = "stylesheet" href = "css/experience.css">
+    <link rel = "stylesheet" href = "css/footer.css">
+
+    <!-- browser tab icon -->
+    <link rel="icon" type="image/png" href="assets/icons/logo_small.png">
+
+</head>
+
+<body
+    class="body"
+>
+    <!-- header: personal monogram logo -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"
+            aria-label="Selah Frederickson - Experience">
+            <img
+                src="assets/icons/ssf_logo.png"
+                alt="SSF botanical monogram"
+            >
+        </a>
+    </header>
+
+    <!-- navigation: stays available as panel opens and closes -->
+    <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+    >
+        <span class="nav-toggle-icon" aria-hidden="true">‹</span> <!-- chevron -->
+    </button>
+
+    <!-- a subtle backdrop separates open panel from the page -->
+    <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+    <!-- expandable navigation panel -->
+    <aside
+        class="nav-panel"
+        id="site-navigation"
+        aria-label="Site navigation"
+        aria-hidden="true"
+        inert
+    >
+        <div class="nav-panel-header">
+            <span class="nav-logo">
+                <img
+                    src="assets/icons/ssf_logo_nobkg.png"
+                    alt="SSF botanical monogram"
+                >
+            </span>
+        </div>
+
+        <nav class="nav-panel-links" aria-label="Portfolio pages">
+            <a class="nav-card" href="index.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Home</span>
+                    <span class="nav-card-description">
+                        Return to the beginning.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="about.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">About</span>
+                    <span class="nav-card-description">
+                        Background, interests, and goals.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="projects.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Projects</span>
+                    <span class="nav-card-description">
+                        Selected interdisciplinary work.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="experience.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Experience</span>
+                    <span class="nav-card-description">
+                        Research and professional roles.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="contact.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Contact</span>
+                    <span class="nav-card-description">
+                        Get in touch with me.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="experience-page">
+
+        <div class="botanical-background" aria-hidden="true">
+            <img
+                class="botanical-engraving-1"
+                src="assets/images/background/engraving_1.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-2"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+
+            <img
+                class="botanical-engraving-3"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-4"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+        </div>
+
+        <!-- Page introduction -->
+        <section class="experience-intro">
+            <p class="eyebrow">WHERE I HAVE LEARNED AND CONTRIBUTED</p>
+            <h1>Experience & <span>Service</span></h1>
+            <p class="experience-lead">
+                My experience spans interdisciplinary research,
+                collaborative learning, teaching, and service.
+                Each has shaped how I approach technical problems
+                and contribute to the communities around me.
+            </p>
+        </section>
+    
+        <!-- Research experience -->
+        <section class="experience-section">
+            <div class="experience-section-heading">
+                <p class="eyebrow">01 / INVESTIGATION & DISCOVERY</p>
+                <h2>Research Experience</h2>
+            </div>
+    
+            <div class="experience-list">
+    
+                <article class="experience-card">
+                    <div class="experience-card-heading">
+                        <div>
+                            <p class="experience-type">Research Assistantship</p>
+                            <h3>Wildfire History Atlas</h3>
+                            <p class="experience-organization">
+                                University of Montana
+                            </p>
+                        </div>
+                        <p class="experience-dates">
+                            September 2025 - Present
+                        </p>
+                    </div>
+    
+                    <p class="experience-mentor">
+                        Faculty mentor: Dr. Jacob Downs
+                    </p>
+    
+                    <ul class="experience-highlights">
+                        <li>
+                            Independently developed an interactive
+                            wildfire data exploration application using
+                            MTBS fire-perimeter data and geospatial analysis.
+                        </li>
+                        <li>
+                            Integrated geographic and statistical
+                            visualizations into a unified interface using
+                            Python, GeoPandas, Plotly, and Dash.
+                        </li>
+                        <li>
+                            Presented the project at a research conference
+                            and to the Smart Fires AI/ML team, communicating
+                            its methods and visualization approach.
+                        </li>
+                    </ul>
+    
+                    <a class="experience-link" href="projects.html">
+                        Explore the project →
+                    </a>
+                </article>
+    
+                <article class="experience-card">
+                    <div class="experience-card-heading">
+                        <div>
+                            <p class="experience-type">Collaborative Research</p>
+                            <h3>
+                                A Weighted Approach to Student Persona
+                                Modeling in AI-Driven Educational Simulations
+                            </h3>
+                            <p class="experience-organization">
+                                Mälardalen University · International research team
+                            </p>
+                        </div>
+                        <p class="experience-dates">Spring 2026</p>
+                    </div>
+    
+                    <ul class="experience-highlights">
+                        <li>
+                            Contributed to a five-person undergraduate and
+                            graduate research team investigating AI-driven
+                            student agents for educational simulations.
+                        </li>
+                        <li>
+                            Helped coordinate the team, conduct a literature
+                            review, develop student personas, and gather
+                            educator feedback on their realism.
+                        </li>
+                        <li>
+                            Contributed to the research paper's introduction,
+                            background, methods, and results sections.
+                        </li>
+                        <li>
+                            Contributed to findings that evaluators identified
+                            personality traits more readily than knowledge
+                            and affective states in student agents.
+                        </li>
+                    </ul>
+    
+                    <a class="experience-link" href="projects.html">
+                        Explore the project →
+                    </a>
+                </article>
+    
+                <article class="experience-card">
+                    <div class="experience-card-heading">
+                        <div>
+                            <p class="experience-type">Quantitative Research</p>
+                            <h3>
+                                Factors Associated with High School
+                                Students' Educational Expectations
+                            </h3>
+                            <p class="experience-organization">
+                                University of Montana · Research with Dr. James Tuttle
+                            </p>
+                        </div>
+                        <p class="experience-dates">August 2026 – Present</p>
+                    </div>
+    
+                    <ul class="experience-highlights">
+                        <li>
+                            Conducting quantitative research using the
+                            High School Longitudinal Study of 2009 (HSLS:09)
+                            dataset.
+                        </li>
+                        <li>
+                            Examining associations between educational
+                            expectations and factors including mathematics
+                            achievement and self-efficacy.
+                        </li>
+                        <li>
+                            Developing and interpreting statistical analyses,
+                            including multinomial logistic regression, to
+                            investigate differences in educational expectations.
+                        </li>
+                    </ul>
+                </article>
+    
+            </div>
+        </section>
+    
+        <!-- Leadership and service -->
+        <section class="experience-section">
+            <div class="experience-section-heading">
+                <p class="eyebrow">02 / COMMUNITY & COLLABORATION</p>
+                <h2>Leadership & Service</h2>
+            </div>
+    
+            <div class="experience-list">
+    
+                <article class="experience-card">
+                    <div class="experience-card-heading">
+                        <div>
+                            <p class="experience-type">Teaching & Learning</p>
+                            <h3>Learning Assistant</h3>
+                            <p class="experience-organization">
+                                Computers, Ethics, and Society · University of Montana
+                            </p>
+                        </div>
+                        <p class="experience-dates">
+                            Spring 2025
+                        </p>
+                    </div>
+    
+                    <ul class="experience-highlights">
+                        <li>
+                            Supported student learning in a course examining
+                            the relationship between computing, ethics,
+                            and society.
+                        </li>
+                        <li>
+                            Helped foster thoughtful engagement with the
+                            social and ethical implications of technology.
+                        </li>
+                    </ul>
+                </article>
+    
+                <article class="experience-card">
+                    <div class="experience-card-heading">
+                        <div>
+                            <p class="experience-type">Departmental Service</p>
+                            <h3>Student Evaluation Committee</h3>
+                            <p class="experience-organization">
+                                Computer Science Department · University of Montana
+                            </p>
+                        </div>
+                        <p class="experience-dates">Autumn 2026</p>
+                    </div>
+    
+                    <ul class="experience-highlights">
+                        <li>
+                            Faculty-nominated to serve on a student committee
+                            reviewing student feedback on faculty teaching.
+                        </li>
+                        <li>
+                            Contribute a student perspective to the
+                            department's faculty evaluation process.
+                        </li>
+                    </ul>
+                </article>
+    
+                <article class="experience-card">
+                    <div class="experience-card-heading">
+                        <div>
+                            <p class="experience-type">Teamwork & Informal Leadership</p>
+                            <h3>Grizzly Marching Band</h3>
+                            <p class="experience-organization">
+                                University of Montana
+                            </p>
+                        </div>
+                        <p class="experience-dates">
+                            Autumn 2023 - Present
+                        </p>
+                    </div>
+    
+                    <ul class="experience-highlights">
+                        <li>
+                            Contribute to a collaborative performance
+                            ensemble requiring preparation, coordination,
+                            and shared responsibility.
+                        </li>
+                        <li>
+                            Build teamwork, accountability, and informal
+                            leadership through participation in a
+                            large ensemble.
+                        </li>
+                    </ul>
+                </article>
+    
+            </div>
+        </section>
+    
+        <!-- Additional professional experience -->
+        <section class="experience-section">
+            <div class="experience-section-heading">
+                <p class="eyebrow">03 / PROFESSIONAL FOUNDATIONS</p>
+                <h2>Additional Experience</h2>
+                <p class="experience-section-lead">
+                    Work beyond the classroom has strengthened my
+                    reliability, adaptability, and ability to contribute
+                    in professional environments.
+                </p>
+            </div>
+    
+            <div class="employment-list">
+    
+                <article class="employment-item">
+                    <div>
+                        <h3>Student Employee - The Lodge Dining Center</h3>
+                        <p class="experience-organization">
+                            University of Montana: August 2023 - September 2025
+                        </p>
+                    </div>
+                    <p>
+                        More than two years of experience supporting
+                        daily operations and working as part of a
+                        service-oriented team.
+                    </p>
+                </article>
+    
+                <article class="employment-item">
+                    <div>
+                        <h3>Window Washing Technician</h3>
+                        <p class="experience-organization">
+                            Pane'N the Glass Window Cleaning: Summer 2024, 
+                            2025, & 2026
+                        </p>
+                    </div>
+                    <p>
+                        Three summers of work demonstrating consistency,
+                        practical problem-solving, and responsibility.
+                    </p>
+                </article>
+    
+                <article class="employment-item">
+                    <div>
+                        <h3>Administrative Assistant</h3>
+                        <p class="experience-organization">
+                            Montana Land Homes Realty: 2022 - 2023
+                        </p>
+                    </div>
+                    <p>
+                        Administrative work in a professional office
+                        environment.
+                    </p>
+                </article>
+    
+            </div>
+        </section>
+    
+    </main>
+    
+
+    <!-- footer: a small consistent sign-off -->
+    <footer class="site-footer">
+        <div class="footer-colophon">
+
+            <div class="footer-signature">
+                <img
+                    class="footer-monogram"
+                    src="assets/icons/logo_small.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+                <p class="footer-credit">
+                    Created by Selah Frederickson
+                </p>
+
+                <span class="footer-year">2026</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
