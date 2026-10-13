@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang = "en">
 <!--
     PROJECTS PAGE
 
@@ -12,3 +14,408 @@
     - Technologies and tools
     - GitHub and/or live links
 -->
+
+<head>
+
+    <meta charset = "UTF-8">
+
+    <meta
+        name = "viewport"
+        content = "width=device-width, initial-scale=1.0"
+    >
+
+    <title>Selah Frederickson</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- portfolio styles -->
+    <link rel = "stylesheet" href = "css/theme.css">
+    <link rel = "stylesheet" href = "css/components.css">
+    <link rel = "stylesheet" href = "css/header.css">
+    <link rel = "stylesheet" href = "css/nav_panel.css">
+    <link rel = "stylesheet" href = "css/projects.css">
+    <link rel = "stylesheet" href = "css/footer.css">
+
+    <!-- browser tab icon -->
+    <link rel="icon" type="image/png" href="assets/icons/logo_small.png">
+
+</head>
+
+<body
+    class="body"
+>
+    <!-- header: personal monogram logo -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"
+            aria-label="Selah Frederickson - Home">
+            <img
+                src="assets/icons/ssf_logo.png"
+                alt="SSF botanical monogram"
+            >
+        </a>
+    </header>
+
+    <!-- navigation: stays available as panel opens and closes -->
+    <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+    >
+        <span class="nav-toggle-icon" aria-hidden="true">‹</span> <!-- chevron -->
+    </button>
+
+    <!-- a subtle backdrop separates open panel from the page -->
+    <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+    <!-- expandable navigation panel -->
+    <aside
+        class="nav-panel"
+        id="site-navigation"
+        aria-label="Site navigation"
+        aria-hidden="true"
+        inert
+    >
+        <div class="nav-panel-header">
+            <span class="nav-logo">
+                <img
+                    src="assets/icons/ssf_logo_nobkg.png"
+                    alt="SSF botanical monogram"
+                >
+            </span>
+        </div>
+
+        <nav class="nav-panel-links" aria-label="Portfolio pages">
+            <a class="nav-card" href="index.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Home</span>
+                    <span class="nav-card-description">
+                        Return to the beginning.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="about.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">About</span>
+                    <span class="nav-card-description">
+                        Background, interests, and goals.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="projects.html" aria-current="page">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Projects</span>
+                    <span class="nav-card-description">
+                        Selected interdisciplinary work.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="experience.html"">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Experience</span>
+                    <span class="nav-card-description">
+                        Research and professional roles.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+
+            <a class="nav-card" href="contact.html">
+                <span class="nav-card-icon" aria-hidden="true">❧</span>
+                <span class="nav-card-copy">
+                    <span class="nav-card-title">Contact</span>
+                    <span class="nav-card-description">
+                        Get in touch with me.
+                    </span>
+                </span>
+                <span class="nav-card-arrow" aria-hidden="true">›</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- main section of projects page -->
+    <main class="projects-page">
+
+        <div class="botanical-background" aria-hidden="true">
+            <img
+                class="botanical-engraving-1"
+                src="assets/images/background/engraving_1.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-2"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+
+            <img
+                class="botanical-engraving-3"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+        
+            <img
+                class="botanical-engraving-4"
+                src="assets/images/background/engraving_2.png"
+                alt=""
+            >
+        </div>
+
+        <!-- page introduction -->
+        <section class="projects-intro">
+
+            <div class="projects-intro-content">
+                <p class="eyebrow">A FEW PROJECTS I HAVE BEEN WORKING ON</p>
+    
+                <h1>
+                    A selection of projects, coursework,
+                    <span>and research.</span>
+                </h1>
+    
+                <p class="projects-lead">
+                    Here I present a collection of research projects,
+                    experiments, and applications exploring the
+                    intersection of computing, data, and human 
+                    experience.
+                </p>
+            </div>
+    
+            <figure class="projects-portrait">
+                <img
+                    src="assets/images/profile/projects_portrait.jpg"
+                    alt="Selah Frederickson in an academic setting"
+                >
+                <figcaption>
+                    Broadening my perspective with every step.
+                </figcaption>
+            </figure>
+        </section>
+    
+        <!-- project stack -->
+        <section class="project-stack" aria-label="Featured projects">
+    
+            <!-- project 1: wildfire history atlas -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <p class="project-category">01 RESEARCH ASSISTANTSHIP</p>
+                    <h2>Wildfire History Atlas</h2>
+                    <p class="project-subtitle">
+                        Independently developed under faculty mentorship
+                    </p>
+                    <p class="project-purpose">
+                        Conducted interdisciplinary research on 
+                        historical wildfire occurrence using the 
+                        Monitoring Trends in Burn Severity (MTBS) 
+                        dataset, combining geospatial analysis, data 
+                        visualization, and exploratory statistical 
+                        analysis.
+                    </p>
+                </div>
+    
+                <div class="project-card-details">
+                    <div class="project-detail">
+                        <h3>Role</h3>
+                        <p>
+                            Independent researcher working under
+                            the mentorship of Dr. Jacob Downs.
+                            My tasks include organizing project goals,
+                            making methodological decisions,
+                            writing code for the interface, and
+                            presenting the project to others.
+                        </p>
+                    </div>
+    
+                    <div class="project-detail">
+                        <h3>Technologies</h3>
+                        <ul class="technology-list">
+                            <li>Python</li>
+                            <li>GeoPandas</li>
+                            <li>Pandas</li>
+                            <li>Plotly</li>
+                            <li>Dash</li>
+                            <li>Leaflet</li>
+                            <li>Matplotlib</li>
+                            <li>NumPy</li>
+                            <li>Shapely</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="project-links">
+                    <!-- target = "_blank" opens poster in a new tab -->
+                    <a
+                        href="assets/documents/wha-poster.pdf"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Research Poster ›
+                    </a>
+    
+                    <a
+                        href="assets/documents/wha-demo-video.mp4"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Watch Demonstration Video ›
+                    </a>
+                </div>
+            </article>
+    
+            <!-- project 2: student agent modeling -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <p class="project-category">02 RESEARCH PROJECT</p>
+                    <h2>
+                        A Weighted Approach to Student Persona
+                        Modeling in AI-Driven Educational Simulations
+                    </h2>
+                    <p class="project-subtitle">
+                        Collaborative research project; five-student research team
+                    </p>
+                    <p class="project-purpose">
+                        Conducted research investigating how attributes such
+                        as knowledge, personality traits, and affective states
+                        can be represesnted in AI-driven student
+                        agents for realistic educational simulations.
+                    </p>
+                </div>
+    
+                <div class="project-card-details">
+                    <div class="project-detail">
+                        <h3>Role</h3>
+                        <p>
+                            I helped to organize the team, complete the
+                            associated literature review, developed later-stage 
+                            personas, coordinated with educator reviewers, and 
+                            wrote drafts of the introduction, background, methods,
+                            and results sections of the paper.
+                        </p>
+                    </div>
+    
+                    <div class="project-detail">
+                        <h3>Technologies</h3>
+                        <ul class="technology-list">
+                            <li>Python</li>
+                            <li>Gemini API</li>
+                            <li>Streamlit</li>
+                            <li>Notion</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="project-links">
+                    <a
+                        href="assets/documents/vistta-1-paper.pdf"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Read Research Paper (unpublished) ›
+                    </a>
+    
+                    <a
+                        href="https://vistta-research.streamlit.app/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Interact With Student Agents ›
+                    </a>
+                </div>
+            </article>
+    
+            <!-- project 3: personal e-portfolio -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <p class="project-category">03  WEB APPLICATION DEVELOPMENT PROJECT</p>
+                    <h2>Company Website</h2>
+                    <p class="project-subtitle">
+                        Independently completed assignment
+                    </p>
+                    <p class="project-purpose">
+                        A website designed to practice using Django while
+                        implementing templates, class-based views, and testing.
+                    </p>
+                </div>
+    
+                <div class="project-card-details">
+                    <div class="project-detail">
+                        <h3>Role</h3>
+                        <p>
+                            Designer and developer.
+                        </p>
+                    </div>
+    
+                    <div class="project-detail">
+                        <h3>Technologies</h3>
+                        <ul class="technology-list">
+                            <li>HTML</li>
+                            <li>Django</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="project-links">
+                    <a
+                        href="https://github.com/selahf/company-website"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Source Code ›
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+
+    <!-- footer: a small consistent sign-off -->
+    <footer class="site-footer">
+        <div class="footer-colophon">
+
+            <div class="footer-signature">
+                <img
+                    class="footer-monogram"
+                    src="assets/icons/logo_small.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+                <p class="footer-credit">
+                    Created by Selah Frederickson
+                </p>
+
+                <span class="footer-year">2026</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

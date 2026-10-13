@@ -1,0 +1,334 @@
+
+/* 
+    PROJECTS PAGE
+
+    Purpose: Provide a selection of my coursework and research
+    projects to show my skills and current work.
+*/
+
+.body {
+    overflow-x: hidden;
+}
+
+/* reusable botanical background layer */
+.botanical-background {
+    position: absolute;
+    inset: 0 auto auto 50%;
+    transform: translateX(-50%);
+
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    height: 100%;
+
+    z-index: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.botanical-background img {
+    position: absolute;
+    height: auto;
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-1 {
+    position: absolute;
+    z-index: -1;
+    top: 128px;
+    left: -176px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-2 {
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    right: -160px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-3 {
+    position: absolute;
+    z-index: -1;
+    top: 808px;
+    left: -240px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-4 {
+    position: absolute;
+    z-index: -1;
+    top: 1600px;
+    right: -256px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* main page */
+
+.projects-page {
+    box-sizing: border-box;
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    padding-bottom: 48px;
+}
+
+.projects-intro {
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    margin-inline: auto;
+    
+    position: relative;
+    isolation: isolate;
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    align-items: center;
+    gap: clamp(40px, 6vw, 88px);
+
+    margin-inline: auto;
+    padding-block: clamp(48px, 8vh, 96px);
+}
+
+.eyebrow {
+    margin-bottom: 24px;
+    color: var(--color-secondary-dark);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.projects-intro h1 {
+    color: var(--color-text);
+    margin-bottom: 24px;
+}
+
+.projects-intro h1 span {
+    display: block;
+    color: var(--color-secondary-dark);
+}
+
+.projects-lead {
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.projects-portrait {
+    width: 100%;
+    max-width: 600px;
+    justify-self: center;
+    margin: 0;
+}
+
+.projects-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-small);
+    object-fit: cover;
+}
+
+.projects-portrait figcaption {
+    margin-top: 12px;
+    color: #738A78;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Stack of projects */
+
+.project-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.project-card {
+    padding: clamp(24px, 4vw, 40px);
+    border: 1px solid var(--color-divider);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.project-card-header {
+    max-width: 1000px;
+}
+
+.project-category {
+    margin-bottom: 12px;
+    color: #738A78;
+    font-size: 0.8rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.project-card h2 {
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.project-subtitle {
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.project-purpose {
+    max-width: 200ch;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+/* Role and technology details */
+
+.project-card-details {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 32px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-divider);
+}
+
+.project-detail h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.project-detail p {
+    margin: 0;
+    line-height: 1.75;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.technology-list li {
+    padding: 6px 10px;
+    border: 1px solid var(--color-divider);
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+/* Project links */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-divider);
+}
+
+.project-link {
+    color: #526C58;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Closing section */
+
+.projects-outro {
+    margin-top: 48px;
+    padding-block: 28px;
+    border-top: 1px solid var(--color-divider);
+}
+
+.projects-outro p {
+    max-width: 60ch;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .botanical-engraving-1 {
+        top: 64px;
+        left: -24px;
+    }
+
+    .botanical-engraving-2 {
+        top: -104px;
+        right: -64px;
+    }
+
+    .botanical-engraving-4 {
+        display: hidden;
+    }
+
+    .projects-intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+        padding-block: 48px;
+    }
+
+    .projects-portrait {
+        max-width: 400px;
+        justify-self: center;
+    }
+    
+    .project-card-header {
+        max-width: 650px;
+    }
+    
+    .project-purpose {
+        max-width: 70ch;
+    }
+    
+    .project-card-details {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .project-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
