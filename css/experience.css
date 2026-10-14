@@ -84,6 +84,34 @@
     user-select: none;
 }
 
+.botanical-engraving-5 {
+    position: absolute;
+    z-index: -1;
+    top: 2400px;
+    left: -240px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.botanical-engraving-6 {
+    position: absolute;
+    z-index: -1;
+    top: 3200px;
+    right: -64px;
+
+    width: clamp(180px, 25vw, 340px);
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
 .eyebrow {
     margin-bottom: 24px;
     color: var(--color-secondary-dark);
@@ -94,34 +122,86 @@
 
 /* Experience page */
 
+/* main page */
+
 .experience-page {
-    width: calc(100% - var(--page-padding) - var(--page-padding));
+    box-sizing: border-box;
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
     max-width: var(--content-max-width);
     margin-inline: auto;
-    padding-bottom: 64px;
+    padding-bottom: 48px;
 }
 
 .experience-intro {
-    max-width: 760px;
-    padding-block: clamp(48px, 8vh, 88px);
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+    margin-inline: auto;
+    
+    position: relative;
+    isolation: isolate;
+    width: min(
+        calc(100% - 2 * var(--page-padding)),
+        var(--content-max-width)
+    );
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    align-items: center;
+    gap: clamp(40px, 6vw, 88px);
+
+    margin-inline: auto;
+    padding-block: clamp(48px, 8vh, 96px);
 }
 
-.experience-intro .eyebrow {
-    margin-bottom: 12px;
+.eyebrow {
+    margin-bottom: 24px;
+    color: var(--color-secondary-dark);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    letter-spacing: 0.08em;
 }
 
 .experience-intro h1 {
-    margin-bottom: 18px;
+    color: var(--color-text);
+    margin-bottom: 24px;
 }
 
 .experience-intro h1 span {
-    color: #738A78;
+    display: block;
+    color: var(--color-secondary-dark);
 }
 
-.experience-lead,
-.experience-section-lead {
-    max-width: 68ch;
+.experience-lead {
+    font-size: 1.08rem;
     line-height: 1.85;
+}
+
+.experience-portrait {
+    width: 100%;
+    max-width: 600px;
+    justify-self: center;
+    margin: 0;
+}
+
+.experience-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-small);
+    object-fit: cover;
+}
+
+.experience-portrait figcaption {
+    margin-top: 12px;
+    color: #738A78;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 /* Sections */
@@ -145,6 +225,7 @@
 
 .experience-section-lead {
     margin-bottom: 0;
+    max-width:1000px;
 }
 
 /* Experience entries */
@@ -157,9 +238,11 @@
 
 .experience-card {
     padding: clamp(24px, 4vw, 36px);
-    border: 1px solid var(--color-divider);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-card);
+    background: var(--glass-background);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .experience-card-heading {
@@ -183,11 +266,12 @@
     line-height: 1.4;
 }
 
-.experience-organization {
+.experience-mentor {
     margin-bottom: 0;
-    color: var(--color-secondary-dark);
+    color: var(--color-text);
     font-size: 0.92rem;
     line-height: 1.6;
+    font-style: italic;
 }
 
 .experience-dates {
@@ -196,13 +280,6 @@
     color: var(--color-secondary-dark);
     font-size: 0.85rem;
     text-align: right;
-}
-
-.experience-mentor {
-    margin-top: 14px;
-    margin-bottom: 0;
-    font-size: 0.92rem;
-    font-style: italic;
 }
 
 /* Impact-focused highlights */
@@ -237,7 +314,7 @@
     text-underline-offset: 4px;
 }
 
-/* Additional employment */
+/* additional employment */
 
 .employment-list {
     border-top: 1px solid var(--color-divider);
