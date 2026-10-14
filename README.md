@@ -24,18 +24,47 @@ The technologies utilized in this project are:
 This project has the following structure:
 ```
 assets/
+    documents/
+        resume.pdf
+        vistta-1-paper.pdf
+        wha-poster.pdf
     icons/
+        logo_small.png
+        ssf_logo_nobkg.png
+        ssf_logo.png
     images/
+        background/
+            engraving_1.png
+            engraving_2.png
+            engraving_3.png
+            engraving_4.png
+            engraving_5.png
         profile/
-        projects/
+            about_portrait.jpg
+            contact_portrait.jpg
+            experience_portrait.jpg
+            portrait_1.jpg
+            portrait_2.jpg
+            portrait_3.jpg
+            portrait_collage.jpg
+            projects_portrait.jpg
 
 css/
+    about.css
     components.css
-    pages.css
+    contact.css
+    experience.css
+    footer.css
+    header.css
+    nav_panel.css
+    projects.css
     theme.css
 
 js/
     main.js
+
+notes/
+    notes.md
 
 about.html
 contact.html
@@ -56,5 +85,6 @@ Each directory and file has a distinctive purpose:
 
 ## Status
 
-This project is currently under development. Some directories may be empty
-and not appear until they contain files.
+Version 1.0 of this project is complete!
+
+View the website at: selahf.github.io
